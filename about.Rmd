@@ -1,0 +1,69 @@
+---
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+<center>
+
+
+## Raleigh's Premier Cycling Challenge
+
+#### Hosted by Mike's Bikes*
+
+  &nbsp;
+
+![](C:/Users/jerem/Documents/Tour de Fry/Tour-de-Fry-2021/files/belltower.jpg){width=75%}
+
+
+  &nbsp;
+  
+### What is the "Tour de Fry"?
+
+
+###### Get on a bike, ride around Raleigh, stop at places that serve french fries, order french fries, eat french fries.
+
+  &nbsp;
+
+### Why?
+
+  
+###### Some of us really like french fries, bikes, and Raleigh, so we combined them.
+
+  &nbsp;
+
+### But isn't it a lil gross to eat so many french fries?
+
+  
+###### Yes.
+
+  &nbsp;
+
+### How do I join?
+
+  
+###### Mike's Bikes will find you.
+
+  &nbsp;
+
+***
+
+###### *Mike sometimes included.
+
+
+</center>
+
+
+  &nbsp;
+  &nbsp;
+  &nbsp;
+  &nbsp;
+  &nbsp;
+  &nbsp;
+  &nbsp;
+  &nbsp;
+  
+
+

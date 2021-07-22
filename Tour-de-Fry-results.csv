@@ -1,0 +1,54 @@
+Timestamp,Name (if you want),Restaurant,Dippability (Sauce Vehicle Potential),Surface Area to Volume,Shape,Texture,Seasoning,Overall Fry Experience
+7/13/2021 18:01:42,Mike,Cookout,4,4,4,5,6,5
+7/13/2021 18:02:44,,Cookout,6,6,4,5,7,6
+7/13/2021 18:03:22,Jaq,Cookout,6,3,4,5,7,5
+7/13/2021 18:03:41,Julia ,Cookout,6,4,5,4,6,5
+7/13/2021 18:04:38,Jeremy,Cookout,6,5,5,6,6,6
+7/13/2021 18:04:46,Julia,Cookout,7,7,3,5,7,5
+7/13/2021 18:05:11,,Cookout,4,5,5,5,6,5
+7/13/2021 18:14:07,Mike,Popeye's,4,6,4,5,6,6
+7/13/2021 18:14:13,Jaq,Popeye's,5,6,5,7,7,6
+7/13/2021 18:15:00,Julia,Popeye's,1,7,3,6,5,6
+7/13/2021 18:15:03,Silvana ,Popeye's,2,5,4,2,5,3
+7/13/2021 18:15:33,Julia - really Sam ,Popeye's,3,7,6,7,7,7
+7/13/2021 18:15:41,Jeremy,Popeye's,5,4,6,7,6,6
+7/13/2021 18:15:43,Jack,Popeye's,4,7,5,6,4,6
+7/13/2021 18:46:01,Julia,Popeye's,1,7,3,6,5,6
+7/13/2021 18:46:31,Jaq,Arby's,7,6,7,6,6,6
+7/13/2021 18:46:37,Mike,Snoopy's,7,3,3,3,3,4
+7/13/2021 18:47:04,Samuel ,Arby's,4,7,7,7,3,6
+7/13/2021 18:47:10,julia,Zaxby's,7,6,5,5,7,7
+7/13/2021 18:47:18,Mike,Zaxby's,4,4,4,4,4,4
+7/13/2021 18:48:05,Jaq,Zaxby's,7,5,5,6,6,6
+7/13/2021 18:48:16,Mike,Arby's,6,4,4,3,3,3
+7/13/2021 18:48:23,julita,Arby's,4,3,7,5,3,5
+7/13/2021 18:48:30,,Snoopy's,6,3,3,4,3,4
+7/13/2021 18:49:01,Silvana Alfieri,Arby's,2,2,6,2,1,1
+7/13/2021 18:49:03,Samuel ,Zaxby's,4,3,4,5,5,4
+7/13/2021 18:49:09,Jeremy,Arby's,7,5,7,4,4,4
+7/13/2021 18:49:29,Silvana Alfieri,Snoopy's,7,4,5,2,2,4
+7/13/2021 18:49:34,Jeremy,Snoopy's,6,4,5,2,1,3
+7/13/2021 18:50:06,Samuel ,Snoopy's,4,2,3,3,1,2
+7/13/2021 18:50:15,Jeremy,Zaxby's,6,5,6,6,6,6
+7/13/2021 18:50:39,juja,Snoopy's,5,5,5,4,1,3
+7/13/2021 18:52:14,Silvana Alfieri,Zaxby's,5,4,3,5,4,4
+7/13/2021 19:16:57,julia,Char-Grill,6,6,2,7,6,7
+7/13/2021 19:17:30,Samuel,Char-Grill,4,5,3,5,7,6
+7/13/2021 19:18:14,Mike,Char-Grill,5,6,6,6,7,6
+7/13/2021 19:18:47,Jaq,Char-Grill,5,4,2,2,5,3
+7/13/2021 19:32:58,Mike,MoJoe's,4,5,4,4,4,4
+7/13/2021 19:48:06,Silvana ,Char-Grill,7,4,4,7,7,7
+7/13/2021 19:49:16,julia,MoJoe's,5,7,6,7,7,6
+7/13/2021 19:50:29,Jaq,MoJoe's,6,6,5,6,6,6
+7/13/2021 19:50:36,Jeremy,MoJoe's,7,7,7,7,7,7
+7/13/2021 19:51:15,Jeremy,Char-Grill,4,4,3,4,4,4
+7/13/2021 19:52:10,,Raleigh Beer Garden,3,3,4,5,7,6
+7/13/2021 19:59:54,Jaq,Raleigh Beer Garden,7,6,5,7,6,7
+7/13/2021 22:09:58,Jack,MoJoe's,6,5,6,5,7,7
+7/13/2021 22:10:28,Jack O,Arby's,6,6,6,3,2,2
+7/13/2021 22:11:00,,Raleigh Beer Garden,4,7,5,6,5,7
+7/13/2021 22:11:41,Jack O,Zaxby's,6,4,5,4,6,6
+7/13/2021 22:12:01,,Snoopy's,5,5,5,4,1,3
+7/14/2021 11:26:24,julia,MoJoe's,5,7,6,7,7,6
+7/14/2021 20:12:24,Jeremy,Char-Grill,4,4,3,4,4,4
+7/15/2021 8:24:30,Jeremy,Char-Grill,4,4,3,4,4,4

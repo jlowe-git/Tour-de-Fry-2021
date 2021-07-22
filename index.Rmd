@@ -1,0 +1,57 @@
+---
+title: ""
+---
+
+```{css, echo=FALSE}
+.code-style {
+  background-color: snow;
+  border: 1px solid black;
+  font-weight: bold
+}
+```
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+
+knitr::opts_chunk$set(class.source = "code-style")
+
+
+```
+
+<link rel="stylesheet" href="styles.css" type="text/css">
+<link rel="stylesheet" href="site_libs/academicons-1.9.1/css/academicons.min.css"/>
+
+
+  &nbsp;
+  &nbsp;
+
+
+<center>
+
+## Welcome to the Tour de Fry 2021.
+
+  &nbsp;
+  
+#### [🚴](jlowe-git.github.io/Tour-de-Fry-2021/about.knit) [🍟](jlowe-git.github.io/Tour-de-Fry-2021/results.knit)
+  
+
+  &nbsp;
+  
+
+![](C:/Users/jerem/Documents/Tour de Fry/Tour-de-Fry-2021/files/mike_smelly.jpg){width=55%}
+  &nbsp;
+  &nbsp;
+  
+</center>
+
+  &nbsp;
+  &nbsp;
+  &nbsp;
+  &nbsp;
+  &nbsp;
+  &nbsp;
+  &nbsp;
+  &nbsp;
+  
+

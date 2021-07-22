@@ -1,0 +1,183 @@
+---
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+
+```
+
+```{r Package and Data Loading, message=FALSE, warning=FALSE}
+
+library(tidyverse)
+library(kableExtra)
+
+
+fry <- read_csv("C:/Users/jerem/Documents/Tour de Fry/Tour-de-Fry-2021/Tour-de-Fry-results.csv")
+
+
+```
+
+
+
+
+<center>
+
+## Tour de Fry 2021 Results
+
+  &nbsp;
+
+###### On July 13th, 7 brave souls embarked on a journey across Raleigh towards potato heaven: the Tour de Fry. Fries were got, bikes and Jacks were lost, and Mike (the original bike) showed up. All in a day's effort to determine the best fries in Raleigh (okay we did miss quite a few key restaurants but we'll get it next time). 
+
+  
+***
+
+#### Participants
+
+  &nbsp;
+
+###### One thing is for certain, nobody knows how to spell their name.
+
+  &nbsp;
+
+```{r Participants, message=FALSE}
+
+participants <- fry%>%
+  ggplot(aes(x = `Name (if you want)`))+
+  geom_bar(fill = "blueviolet", color = "blueviolet")+
+  scale_y_continuous(n.breaks = 9)+
+  labs(x = "Participant",
+       y = "Frequency")+
+  guides(x = guide_axis(angle=90))+
+  theme_bw()
+
+participants
+  
+
+```
+
+***
+
+#### Overall Results
+
+  &nbsp;
+
+###### Rating their overall fry experience, Mike's Bikers have determined their favorite french fry in Raleigh. Sort've.
+
+  &nbsp;
+  
+```{r Overall Results, message=FALSE, fig.width=9, fig.height=6}
+
+overall_results <- fry%>%
+  ggplot(aes(x = Restaurant, y = `Overall Fry Experience`))+
+  geom_boxplot()+
+  labs(x = "Restaurant", y = "Overall Fry Experience")+
+  scale_x_discrete(guide = guide_axis(n.dodge=1))+
+  scale_y_continuous(n.breaks = 7)+
+  theme_bw()
+
+overall_results
+
+
+```
+  &nbsp;
+
+###### We know for a **scientific fact** that Snoopy's fries are awful. Arby's led to the most confusion, probably because of the questionable cheese dip and unnamed flavor.  It would also seem people really like MoJoe's, Popeye's, and Raleigh Beer Garden, with Raleigh Beer Garden at the top!
+
+
+*** 
+
+#### Let's Break it Down
+
+
+  &nbsp;
+
+###### Take a peek at how each restaraunt holds up for each criteria.
+
+
+  &nbsp;
+
+```{r Overall Results for each Criteria, message=FALSE, fig.width=16, fig.height=10}
+
+#Pivoting longer
+fry_tibble <- tibble(fry)
+
+fry_long <- fry_tibble%>%
+  pivot_longer(c(`Dippability (Sauce Vehicle Potential)`, `Surface Area to Volume`, `Shape`, `Texture`, `Seasoning`, `Overall Fry Experience`), names_to = "Criteria", values_to = "Rating")
+
+fry_long <- fry_long%>%
+  filter(Criteria != "Overall Fry Experience")
+
+#Plotting
+overall_results <- fry_long%>%
+  ggplot(aes(x = Criteria, y = Rating, fill = Restaurant))+
+  geom_boxplot()+
+  labs(x = "Criteria", y = "Rating")+
+  scale_x_discrete(guide = guide_axis(n.dodge=1))+
+  scale_fill_brewer(palette = "Set1")+
+  scale_y_continuous(n.breaks = 7)+
+  theme_bw()
+
+overall_results
+
+
+```
+
+
+  &nbsp;
+  
+###### Yeah that's a mess. Looks like we can't agree on anything other than a mutual dislike of Snoopy's.
+
+
+***
+
+#### Principle Components Analysis
+
+###### This last item involves running a Principle Components Analysis (PCA). Now, I am not running it correctly because our sample size is so small, but I thought it'd be fun to try anyways. PCA can be used in scale development and show up how each of our criteria are related to one another. 
+
+  &nbsp;
+
+```{r PCA, message=FALSE, warning=FALSE, fig.height= 6, fig.width= 6}
+
+fry_pca <- prcomp(fry[,c(4:9)], center = TRUE, scale. = TRUE)
+
+
+Criteria <- c("Dippability", "Surface Area to Volume", "Shape", "Texture", "Seasoning", "Overall Experience")
+
+fry_loadings <- data.frame(Criteria, fry_pca$rotation[,1:6])
+
+pca_plot <- fry_loadings%>%
+  ggplot(aes(x = PC1, y = PC2))+
+  geom_point()+
+  ggrepel::geom_text_repel(aes(label = Criteria), min.segment.length = 0, size = 3.5)+
+  labs(x = "Principle Component 1", y = "Principle Component 2")+
+  scale_color_brewer(palette = "Set1")+
+  coord_cartesian(xlim = c(-1, 1), ylim = c(-1, 1))+
+  theme_bw()
+  
+
+  
+pca_plot
+
+
+```
+
+
+  &nbsp;
+  
+###### Couple of interesting things, it looks like shape and dippability track together, whereas the rest of the criteria track together. Texture seems to be most closely related to the overall fry experience, so this is probably important for Mike Biker's.
+
+
+
+</center>
+
+
+  &nbsp;
+  &nbsp;
+  &nbsp;
+  &nbsp;
+  &nbsp;
+  &nbsp;
+  &nbsp;
+  &nbsp;
+  

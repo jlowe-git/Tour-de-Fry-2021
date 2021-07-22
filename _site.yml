@@ -1,0 +1,20 @@
+name: "Tour-de-Fry-2021"
+output_dir: "."
+navbar:
+  title: "Tour de Fry 2021"
+  left:
+    - text: "🚴"
+      href: about.html
+    - text: "🍟"
+      href: results.html
+  right: 
+    - icon: fa-code
+      href: http://github.com/jlowe-git/Tour-de-Fry-2021
+
+      
+output:
+  html_document:
+    theme: simplex
+    css: 'styles.css'
+    include:
+      after_body: footer.html
